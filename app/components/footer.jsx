@@ -2,6 +2,9 @@
 import Link from 'next/link';
 import { CgGitFork } from "react-icons/cg";
 import { IoStar } from "react-icons/io5";
+import { IoLogoGithub } from "react-icons/io";
+import { personalData } from '@/utils/data/personal-data';
+
 
 function Footer() {
   return (
@@ -11,13 +14,19 @@ function Footer() {
           <div className="absolute top-0 h-[1px] w-1/2  bg-gradient-to-r from-transparent via-violet-500 to-transparent"></div>
         </div>
         <div className="flex flex-col md:flex-row items-center justify-between">
-          <p className="text-sm">
-            © Developer Portfolio by <Link href="#" className="text-[#16f2b3]">James Miller</Link>
+          <p className="text-lg">
+            © Developer Portfolio by <Link href="#" className="text-[#16f2b3]">Gonzalo Esteban</Link>
           </p>
           <div className="flex items-center gap-5">
+            <Link target="_blank" href={personalData.github} className='mr-5'>
+              <IoLogoGithub
+                className="bg-[#8b98a5] p-3 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
+                size={48}
+              />
+            </Link>
             <Link
               target="_blank"
-              href="https://github.com/said7388/developer-portfolio"
+              href="https://github.com/lightdev627/developer-portfolio"
               className="flex items-center gap-2 uppercase hover:text-[#16f2b3]"
             >
               <IoStar />
@@ -25,7 +34,7 @@ function Footer() {
             </Link>
             <Link
               target="_blank"
-              href="https://github.com/said7388/developer-portfolio/fork"
+              href="https://github.com/lightdev627/developer-portfolio/fork"
               className="flex items-center gap-2 uppercase hover:text-[#16f2b3]"
             >
               <CgGitFork />

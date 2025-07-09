@@ -45,9 +45,11 @@ import mongoDB from '../app/assets/svg/skills/mongoDB.svg';
 import mysql from '../app/assets/svg/skills/mysql.svg';
 import nextJS from '../app/assets/svg/skills/nextJS.svg';
 import nginx from '../app/assets/svg/skills/nginx.svg';
+import nodejs from '../app/assets/svg/skills/nodejs.svg';
 import numpy from '../app/assets/svg/skills/numpy.svg';
 import nuxtJS from '../app/assets/svg/skills/nuxtJS.svg';
 import opencv from '../app/assets/svg/skills/opencv.svg';
+import openai from '../app/assets/svg/skills/openai.svg';
 import photoshop from '../app/assets/svg/skills/photoshop.svg';
 import php from '../app/assets/svg/skills/php.svg';
 import picsart from '../app/assets/svg/skills/picsart.svg';
@@ -73,6 +75,9 @@ import vuetifyjs from '../app/assets/svg/skills/vuetifyjs.svg';
 import webix from '../app/assets/svg/skills/webix.svg';
 import wolframalpha from '../app/assets/svg/skills/wolframalpha.svg';
 import wordpress from '../app/assets/svg/skills/wordpress.svg';
+import redux from '../app/assets/svg/skills/redux.svg';
+import jest from '../app/assets/svg/skills/jest.svg';
+import jupyter from '../app/assets/svg/skills/jupyter.svg';
 
 import pandas from '../app/assets/svg/skills/pandas.svg';
 import scikitlearn from '../app/assets/svg/skills/scikit-learn.svg';
@@ -196,6 +201,8 @@ export const skillsImage = (skill) => {
       return numpy;
     case 'opencv':
       return opencv;
+    case 'openai':
+      return openai;
     case 'premiere pro':
       return premierepro;
     case 'pytorch':
@@ -234,14 +241,14 @@ export const skillsImage = (skill) => {
       return sketch;
     case 'unity':
       return unity;
+    case 'nodejs':
+      return nodejs;
     case 'wolframalpha':
       return wolframalpha;
     case 'canva':
       return canva;
     case 'pandas':
       return pandas;
-    case 'sklearn':
-      return scikitlearn;
     case '.net':
       return dotnet;
     case '.net core':
@@ -252,8 +259,16 @@ export const skillsImage = (skill) => {
       return linux;
     case 'sqlalchemy':
       return sqlalchemy;
+    case 'scikitlearn':
+      return scikitlearn;
     case 'fastapi':
       return fastapi;
+    case 'redux':
+      return redux;
+    case 'jest':
+      return jest;
+    case 'jupyter':
+      return jupyter;
     default:
       break;
   }
