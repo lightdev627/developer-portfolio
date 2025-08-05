@@ -114,7 +114,9 @@ function HeroSection() {
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">MongoDB</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">AI/ML</span>
+                <span className="text-amber-300">AI Agent</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">AI Automation</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">LLM</span>
                 <span className="text-gray-400">{"', '"}</span>
